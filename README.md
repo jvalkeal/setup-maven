@@ -15,7 +15,7 @@ See [action.yml](action.yml)
 ```yaml
 steps:
 - uses: actions/checkout@v1
-- uses: jvalkeal/setup-maven@master
+- uses: jvalkeal/setup-maven@v1
   with:
     maven-version: '3.6.2'
     maven-mirror: <uri to maven mirror directory> # Optional - defaults to https://archive.apache.org/dist/maven/maven-3/
