@@ -1,7 +1,7 @@
-import * as io from '@actions/io'
-import * as fs from 'fs'
-import * as path from 'path'
-import * as child_process from 'child_process'
+import * as io from '@actions/io';
+import * as fs from 'fs';
+import * as path from 'path';
+import * as child_process from 'child_process';
 
 const toolDir = path.join(__dirname, 'runnerm', 'tools');
 const tempDir = path.join(__dirname, 'runnerm', 'temp');
