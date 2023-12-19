@@ -10,7 +10,12 @@ async function run() {
       await mavenInstaller.getMaven(mavenVersion, mavenFile, mavenMirror);
     }
   } catch (error) {
-    core.setFailed(error.message);
+    if (error instanceof Error) {
+      core.setFailed(error.message);
+    }
+    else {
+      core.setFailed(`Unexpected error ${error}`)
+    }
   }
 }
 
