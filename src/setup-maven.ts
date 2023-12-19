@@ -14,7 +14,7 @@ async function run() {
       core.setFailed(error.message);
     }
     else {
-      core.setFailed(`Unexpected error ${error}`)
+      core.setFailed(`Unexpected error ${error}`);
     }
   }
 }
